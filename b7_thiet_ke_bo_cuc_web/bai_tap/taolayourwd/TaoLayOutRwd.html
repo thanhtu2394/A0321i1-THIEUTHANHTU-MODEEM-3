@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 20px;
+            color: red;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 5px;
+
+        }
+
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .background {
+            background-color: gray;
+            margin-bottom:5px;
+
+
+        }
+
+        .center {
+            float: left
+        }
+
+        .block {
+            display: block;
+            float: right;
+            margin-bottom: 30px;
+            border: solid;
+            border-color: red;
+            background-color: gray;
+        }
+        .background1{
+            background-color: green;
+            height: 1000px}
+
+    </style>
+</head>
+<body>
+<div class="row background">
+    <div class="col-5">
+        <div class="row">
+            <div class="col-12">
+                home|home1|home2|home3
+            </div>
+        </div>
+    </div>
+    <div class="col-6"></div>
+    <div class="col-1">
+        <div class="row">
+            <div class="col-12">
+                login
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row ">
+    <div class="col-2 background1">
+        <div class="row">
+            <div class="col-12">
+                <a href="">link</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="">link</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href="">link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-9 center">
+        <div class="row">
+            <div class="col-12">
+                <h1>WELCOME</h1>
+                <p>
+                    [Bài tập] Tạo layout với RWD
+                    Mục tiêu
+                    Luyện tập sử dụng DIV và CSS để tạo bố cục cho trang web
+
+                    Mô tả
+                    Hãy sử dụng DIV và CSS để tạo một trang web có bố cục như ảnh sau:
+                </p>
+                <hr>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-12">
+                thanh tu
+            </div>
+        </div>
+    </div>
+    <div class="col-1 background1">
+        <div class="row">
+            <div class="col-12 block">
+                ADS
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 block">
+                ADS
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 block">
+                ADS
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
