@@ -1,11 +1,11 @@
 package thuc_hanh.reporsi;
 
-import thuc_hanh.bin.user;
+import thuc_hanh.bin.User;
 
 import java.util.List;
 
 public interface reposi {
-    List<user> select();
+    List<User> select();
 
-   void create(user user);
+   void create(User user);
 }

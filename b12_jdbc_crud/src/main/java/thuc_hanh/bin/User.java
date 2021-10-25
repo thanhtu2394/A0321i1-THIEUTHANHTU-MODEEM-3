@@ -1,22 +1,20 @@
 package thuc_hanh.bin;
 
-public class user {
-    protected int id;
-    protected String name;
-    protected String email;
-    protected String country;
+public class User {
+    private int id;
+    private String name;
+    private String email;
+    private String country;
 
-    public user() {}
+    public User() {}
 
-    public user(String name, String email, String country) {
-        super();
+    public User(String name, String email, String country) {
         this.name = name;
         this.email = email;
         this.country = country;
     }
 
-    public user(int id, String name, String email, String country) {
-        super();
+    public User(int id, String name, String email, String country) {
         this.id = id;
         this.name = name;
         this.email = email;
