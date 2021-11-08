@@ -1,5 +1,7 @@
 package thuc_hanh.bin;
 
+import java.util.Comparator;
+
 public class User {
     private int id;
     private String name;
@@ -45,4 +47,5 @@ public class User {
     public void setCountry(String country) {
         this.country = country;
     }
+
 }

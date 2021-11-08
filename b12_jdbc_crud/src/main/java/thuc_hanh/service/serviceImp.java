@@ -13,4 +13,25 @@ public class serviceImp implements service {
        return reposiIpm.select();
 
     }
+
+    @Override
+    public void create(int id,String name,String email,String country) {
+        reposiIpm.create(id,name,email,country);
+    }
+
+    @Override
+    public void delelte(int id) {
+        reposiIpm.delete(id);
+    }
+
+    @Override
+    public List<User> search(String county) {
+        return reposiIpm.search(county);
+
+    }
+
+    @Override
+    public void edit(int id, String name, String email, String country) {
+        reposiIpm.edit(id, name, email, country);
+    }
 }
